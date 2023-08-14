@@ -17,13 +17,15 @@
   --p-font: 1rem;
 }
 
+::selection {
+  background: var(--main-color);
+}
+
 body{
   background-color: var(--bg-color);
   color: var(--tx-color);
 }
-body::selection {
-  color: var(--main-color);
-}
+
 header {
   position: fixed;
   width: 100%;
