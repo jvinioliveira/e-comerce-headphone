@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="css/styles.css">
+
+  <link rel="stylesheet"
+  href="https://unpkg.com/boxicons@latest/css/boxicons.min.css">
+
+  <title>E-Comerce Fone de Ouvido</title>
+</head>
+<body>
+  <header>
+    <a href="#" class="logo"><i class='bx bx-headphone'></i>SoundBox</a>
+    <ul class="navBar">
+      <li><a href="#">Overview</a></li>
+      <li><a href="#">Teach Specs</a></li>
+      <li><a href="#">Reviews</a></li>
+      <li><a href="#">Contact Us</a></li>
+    </ul>
+    <div class="headerIcons">
+      <i class='bx bx-cart' ></i>
+      <a href="#" id="menu"><i class='bx bx-menu'></i></a>
+    </div>
+  </header>
+
+  <section class="mainContent">
+    <img src="img/product1.png" alt="product" class="one">
+    <div>
+      <h1 class="title">Wireless<br>Headphones</h1>
+      <p class="description">The smarter way to listen</p>
+      <h3 class="price">$199.00</h3>
+      <a href="#" class="btnShop">Shop Now</a>
+    </div>
+  </section>
+
+  <section class="content">
+    <div class="product">
+      <li><img src="img/main1.png" alt="headphone1" onclick="slider('img/product1.png')"></li>
+    </div>
+    <div class="product2">
+      <li><img src="img/main2.png" alt="headphone2" onclick="slider('img/product2.png')"></li>
+    </div>
+    <div class="product3">
+      <li><img src="img/main3.png" alt="headphone3" onclick="slider('img/product3.png')"></li>
+    </div>
+  </section>
+
+  <script>
+    function slider (anything){
+        document.querySelector (".one") .src = anything;
+    };
+
+  let menu = document.querySelector ("#menu-icon");
+  let navbar = document.querySelector (".navbar");
+  menu.onclick = () => {
+    menu.classList.toggle ("bx-x");
+    navbar.classList.toggle ("open");
+  }
+</script>
+</body>
+</html>
